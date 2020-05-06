@@ -1,0 +1,915 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	font-family: "raleway-bold";
+	background-color: #fff !important;
+	scroll-behavior: smooth;
+	
+}
+
+/*##########################*/
+/*Scroll Bar CSS */
+/*##########################*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 1.71px #F4B400; */
+  /*border-radius: 10px;*/
+  background: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F4B400; 
+
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F4B400; 
+}
+
+
+
+/*##########################*/
+/*HOME Section Starts here*/
+/*##########################*/
+
+#home{
+	background-color: rgba(0, 0, 0, .85) !important;
+}
+
+.column{
+	width: 50%;
+	height: 50vh;
+	background: #06BEE1;
+	position: relative;
+	color: white;
+}
+.columnn{	
+	width: 100%;
+	height: 50vh;
+	background: #06BEE1;
+	position: relative;
+	color: white;
+}
+
+#col1, #col2{
+background-color: #F4B400;
+}
+
+#col3{
+	background-color: black;
+}
+
+
+
+#profile-image{
+	height: 22vh;
+	width: 22vh;
+	min-height:22vh;
+	min-width:22vh;
+	position:absolute;
+  	right:-12vh;
+  	bottom:-8vh;
+  	z-index: 12223;
+  	text-shadow: 0px 0px 62px white;
+  	border: 18px solid #F4B400;
+	border-radius: 100px;
+	padding: 0px;
+	overflow: hidden;
+    transition-duration: 1.8s;
+    transition-property: transform;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #profile-image{
+	height: 16vh;
+	width: 16vh;
+	min-height:16vh;
+	min-width:16vh;
+  	right:-8vh;
+  	bottom:-7vh;
+  	border: 12px solid #F4B400;	
+}
+}
+
+
+#profile-image:hover{
+ transform: rotate(720deg);
+}
+
+
+
+
+#let{
+  	bottom:-15vh;
+  	color: #000;
+	position: relative;
+	z-index: 12223;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	background: #F4B400;
+    border: .5px solid #F4B400;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#start{
+  	bottom:-15vh;
+  	color: #000;
+	position: relative;
+	z-index: 12223;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	background: #F4B400;
+	margin-left: -3px;
+    border: .5px solid #F4B400;
+    border-radius: 0px 25px 25px 0px;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+#start:hover, #let:hover{
+    background: #000;
+    color: #F4B400;
+    box-shadow: 0px 0px 2px rgba(6, 190, 225, .41);
+    border: .5px solid #F4B400;  
+}
+#start:focus, #let:focus {
+  outline:none;
+  box-shadow: none;
+}
+
+
+
+.content{
+	height: 100%;
+	text-align: center;
+	margin: auto 10px !important;
+    position: relative;
+}
+
+#hello, #developer{
+	letter-spacing: 1px;
+	color: #000;
+	font-size: 1.5rem;
+	width: 100%;
+	/*font-family: Roboto;*/
+	font-weight: normal;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+
+.name{
+	font-size: 2rem !important;
+	color: #fff;
+	letter-spacing: 2px;
+	font-family: Roboto;
+	font-weight: bolder;
+}
+
+#about-me{
+	font-size: 1.2rem;
+	color: #fff;
+	margin: 0 10px;
+	letter-spacing: 1px;
+	font-weight: 100 !important;
+    line-height: 1.5;
+}
+
+.col-content{
+	display: none;
+	vertical-align: middle;
+}
+
+.show{
+	display: block;
+	vertical-align: middle;
+}
+
+/*##########################*/
+/*HOME Section Ends here*/
+/*##########################*/
+
+
+/*##########################*/
+/*NAVBAR Section Starts here*/
+/*##########################*/
+
+#navbar {
+	margin: 0px auto;
+	text-align: center;
+	font-weight: bold;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .95);
+    border-bottom: 2px solid #F4B400; 
+}
+
+#navbar a {
+
+  /*float: left;*/
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 11pt;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#navbar a:hover {
+  color: #F4B400;
+}
+
+#navbar a.active {
+  color: #F4B400;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, .0);
+  width: 100%;
+}
+
+/*##########################*/
+/*NAVBAR Section Ends Here*/
+/*##########################*/
+
+
+
+/*##########################*/
+/*About Section Starts here*/
+/*##########################*/
+
+
+#about{
+	background-color: white;
+	margin-top : 0px;
+}
+
+.section-heading{
+	text-align: center;
+	color: #393939;
+	line-height: 18pt;
+	font-size: 30pt;
+	padding: 100px 0 15px 0;
+	text-transform: uppercase;
+}
+
+.section-heading-hr{
+	width: 90px;
+	height: 2px;
+	border-radius: 20px;
+	border: 1px solid #393939;
+	background: #393939;
+	margin: 0 auto 90px auto;
+}
+
+.about-column{
+	text-align: center;
+	margin: 20px auto;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  border: 7px solid #F4B400;
+  border-radius: 20px;
+  background: #F4B400;
+  padding: 12px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.about-icon-heading{
+	margin: 12px auto 6px auto;
+	font-size: 18pt;
+	color: #4F4F4F;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 400;
+}
+
+.about-content{
+	margin: auto;
+	font-size: 12pt;
+	color: #3D3D3D;
+	font-family: "Raleway-bold";
+	font-weight: 200;
+}
+
+.about-me-image{
+	display: table-cell;
+	vertical-align: middle;
+	 display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+#about-profile-image{
+	height: 35vh;
+	width: 35vh;
+	 display: flex; 
+    align-items: center; 
+  	z-index: 2223;
+  	border: 9px solid #F4B400;
+	border-radius: 190px;
+}
+
+.about-me-content{
+	margin: auto;
+	font-size: 13pt;
+	padding-top:10px; 
+	color: #3D3D3D;
+	font-family: "Raleway-bold";
+	font-weight: 400;
+	vertical-align: center;
+}
+
+
+	/*##################*/
+	/*SKILLS CARD DECK*/
+	/*##################*/
+
+.skill-heading{
+	font-size: 25pt;
+	text-shadow: 0 0 3px #000;
+	font-weight: 610;
+	padding-top: 60px;
+	font-family:"freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+}	
+
+#card-back-block{
+	width: 100%;
+	height: 400px;
+	background: #7510F7 !important;
+}
+
+.card-deck{
+	margin-top: -220px;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+
+ #mobile-skill-card,#web-skill-card, #backend-skill-card{
+	padding: auto 125px !important;
+	box-shadow: 0px 0px 2px #7510F7;
+	border-radius: 0px;
+}
+
+ #mobile-skill-card{
+ 	border-top-left-radius: 25px  !important;
+ 	border-top-right-radius: 0px !important;
+ 	border-bottom-right-radius: 0px !important;
+
+}
+
+#web-skill-card{
+	border-radius: 0px  !important;
+
+}
+
+ #backend-skill-card{
+ 	border-top-left-radius: 0px !important;
+ 	border-top-right-radius: 25px  !important;
+ 	border-bottom-left-radius: 0px  !important;
+}
+
+#card-foot-left, #card-foot-middle, #card-foot-right{
+	text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #mobile-skill-card,#web-skill-card, #backend-skill-card{
+	padding: auto 125px !important;
+	border-radius: 25px  !important;
+	box-shadow: 0px 0px 2px #7510F7;
+	margin: 20px auto !important; 
+	margin-bottom: 10px;
+	border-radius: 0px;	
+	width: 100% !important;
+	flex: .1 0 80% !important;
+}
+#card-foot-left, #card-foot-middle, #card-foot-right{
+
+	border-bottom-left-radius: 25px  !important;
+	border-bottom-right-radius: 25px  !important;
+}
+}
+
+
+.card-img-top{
+	text-align: center;
+	margin: 70px auto 20px auto;
+	color: #7510F7;
+}
+
+.card-skills-text-heading{
+	font-size: 16pt;
+	font-weight: 510;
+	color: #0D0D30;
+	margin-bottom: 30px !important; 
+}
+
+
+.card-skills-text{
+	font-size: 11pt;
+	font-weight: 100;
+	color: rgba(0, 0, 0, .7);
+}
+
+.card-skills-inner-headings{
+	font-size: 12pt;
+	font-weight: 450;
+	color: #7510F7;
+	letter-spacing: 1px;
+	margin: 50px auto 20px auto !important;	
+}
+
+.tools-list{
+	padding-bottom: 7px;
+	display: block;
+
+}
+
+/*##########################*/
+/*ABOUT Section Ends here*/
+/*##########################*/
+
+
+/*************************/
+/*Horizontal Line - hr*/
+.between-page-hr{
+	 border: 0;
+    height: 2px;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+
+/*##########################*/
+/*PROJECTS Section Start here*/
+/*##########################*/
+
+         /*##########################*/
+/*Modal CSS*/
+         /*##########################*/
+
+
+.modal-image{
+	width: 100%;
+	max-height: 400px;
+}
+
+.modal-heading{
+	margin-top: 10pt !important;
+	font-size: 1.8rem;
+	color: #4F4F4F;
+	font-weight: 610;
+	font-family:"freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.modal-short-text{
+	font-size: 1rem;
+	color: #c0c0c0;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 650;
+}
+
+
+.modal-desc-text{
+	font-size: .81rem;
+	color: #444;
+	font-weight: 100;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.modal-footer-buttons{
+	float: left;
+	margin-left: 0px;
+	width: 100%;
+}
+.modal-footer-links{
+
+}
+
+.modal-footer-links{
+	font-size: 10pt;
+	background: #DB4437;
+	color: white;
+	
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	font-weight: 600;
+	padding: 5px 10px 5px 10px;
+	
+	border: 1px solid #DB4437;
+}
+
+.modal-footer-links:hover{
+	color: #DB4437;
+	background: transparent;
+	text-decoration: none;
+	box-shadow: 0px 0px 1px black;
+}
+.about-project{
+	border-top: 3px solid #DB4437;
+}
+
+
+.modal-cross-btn{
+	color: #DB4437;
+}
+
+.modal-cross-btn:hover{
+	color: #DB4437;
+	background: transparent;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .modal-heading{
+	margin-top: 10pt !important;
+	font-size: 1.4rem;
+}
+.modal-short-text{
+	font-size: .91rem;	
+}
+}
+
+/*##########################*/
+
+
+
+#projects{
+	background-color: #F5F5F5;
+	padding-bottom: 30px; 
+}
+
+.active-projects{
+	background:#DB4437  !important;
+	transition: all .01s;
+	transition-property: color;
+    transition: all 0.4s ease-in-out;
+	color: white  !important;
+}
+
+.project-button{
+	width: 150px;
+	transition: all .01s;
+	height: 35px;
+	font-weight: 420;
+	margin: 10px;
+	display: inline-block;
+	padding-top: 5px;
+	letter-spacing: 1px;
+    color: #616161;
+    text-align: center;
+    transition-property: color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.all-projects-container a{
+	text-decoration: none  !important;
+	text-transform: uppercase;
+}
+
+.hide-cards{
+	display: none;
+}
+
+.card{
+	border: none !important;
+	border-radius: 10px !important;
+}
+
+.card-background{
+	background-color: #F5F5F5;
+	position: relative;
+}
+
+.card-img-web{
+	background-size: cover;
+	background-image: linear-gradient(
+      rgba(0, 0, 205, 0.85), 
+      rgba(0, 0, 205, 0.85)
+    ),
+    url("https://www.sterlingcheck.com/wp-content/uploads/2018/09/blog-listing.jpg");
+	height: 100% !important;
+	width: 100% !important;
+	min-height: 250px;
+}
+
+.card-img-mobile{
+	background-size: cover;
+	background-image: linear-gradient(
+      rgba(204, 0, 102, 0.85), 
+      rgba(204, 0, 102, 0.85)
+    ),
+    url("https://www.sterlingcheck.com/wp-content/uploads/2018/09/blog-listing.jpg");
+	height: 100% !important;
+	width: 100% !important;
+	min-height: 250px;
+}
+
+.card-img-others{
+	background-size: cover;
+	background-image: linear-gradient(
+      rgba(205, 0, 205, 0.85), 
+      rgba(205, 0, 205, 0.85)
+    ),
+    url("https://www.sterlingcheck.com/wp-content/uploads/2018/09/blog-listing.jpg");
+	height: 100% !important;
+	width: 100% !important;
+	min-height: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .card-img-others,.card-img-mobile, .card-img-web{
+	height: 100% !important;
+	width: 100% !important;
+	min-height: 300px;
+}
+.project-button{
+	width: 90px;	
+}
+}
+
+
+.project-title{
+	font-size: 22pt;
+	font-weight: 610;
+	font-family:"freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	letter-spacing: 1.4px;
+}
+
+.text-content-card{
+	display: none;
+}
+
+
+.text-center{
+	margin: auto;
+	text-align: center;
+}
+
+.card-titlee{
+	color: #1b242f;
+	font-size: 18pt;
+	z-index: 2;
+	text-transform: uppercase;
+	margin: auto;
+	font-family:  "Raleway-bold";
+}
+.card-texte{
+	font-size: 12pt;
+	color: #DB4437;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-weight: 300;
+}
+
+.card-button{
+	font-size: 11pt;
+	color: black;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	padding: 10px 10px 10px 10px;
+	background: transparent;
+	border: 1px solid #DB4437;
+}
+
+.card-button:hover{
+	background: #DB4437;
+	text-decoration: none;
+	color: white;
+}
+
+/*##########################*/
+/*PROJECTS Section Ends here*/
+/*##########################*/
+
+
+
+
+/*##########################*/
+/*CONTACT Section Start here*/
+/*##########################*/
+
+#contact{
+	background: #F5F5F5 ;
+	border-bottom: none;
+	border-top: 1px solid transparent; 
+}
+
+.contact{
+	background: #252934 ;
+	color: white; 
+	border-bottom: none;
+	border-radius: 220px; 
+	box-shadow: 0px 0px 5px #2b1d0e;
+
+}
+.contact-section-heading{
+	text-align: center;
+	color: #fff;
+	line-height: 18pt;
+	font-size: 30pt;
+	padding: 100px 0 15px 0;
+	text-transform: uppercase;
+}
+.contact-section-heading-hr{
+	width: 90px;
+	height: 2px;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	background: #fff;
+	margin: 0 auto 50px auto;
+}
+
+#have-que{
+	text-align: center;
+	font-size: 1.3rem;
+	margin: 0 auto;
+	color: #06BEE1;
+}
+#mail a, #mobile-number a{
+	color: white;
+}
+.vl {
+  border-left: 3px solid white;
+  height: 200px !important;
+}
+#mail a:hover, #mobile-number a:hover{
+	color: #06BEE1;
+	text-decoration: none;
+}
+
+
+/*************************/
+/*Contact Me Forum*/
+.contact-form{
+    background: #252934 ;
+    margin-bottom: 5%;
+    width: 60%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+
+.contact-form form{
+    padding: 10%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+    margin-right: 0px !important;
+}
+
+ .row{
+    margin-right: 0px !important;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: 1px solid #06BEE1;
+    border-radius: 1rem;
+    padding: 1.5%;
+    font-size: .91rem !important;
+    background: transparent;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 3px #06BEE1;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+.contact-form .btnContact:hover
+{
+    background-color: #06BEE1;  
+}
+
+.contact-form .btnContact:focus {
+  outline:none;
+  box-shadow: none;
+}
+
+
+
+/*************************/
+/*FOOTER LINKS And Text*/
+
+#go-top-img{
+	border-radius: 6rem;
+    width: 65px;
+    height: 65px;
+    box-shadow: 0px 0px 5px #06BEE1;
+    margin-top: -35px;
+    transform: rotate(90deg);
+    transition: .2s ease-out; 
+    text-align: center;
+}
+
+#go-top-img:hover{	
+    box-shadow: 0px 0px 15px #06BEE1;
+    transform: rotate(0deg);
+    text-align: center;
+}
+
+.footer-links{
+	background: #1b242f;
+	text-align: center;
+	padding: 10px 0px;
+	margin-left: 0;
+}
+
+#icons, #icons a {
+	margin: auto 4px;
+	color: #06BEE1;
+}
+
+.social-icon-back{
+	border-radius: 8px; 
+	width: 43px;
+	height: 43px;
+	display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+	background: #06BEE1;
+}
+
+.social-icon-back:hover{
+	/*border-radius: 20px;*/
+	background: #fff;
+	box-shadow: 0px 0px 10px #06BEE1;
+	transform:rotate(360deg);
+}
+
+.social-icon-image{
+	width: 30px;
+	height: 30px;
+}
+
+.copyright-text{
+	text-transform: uppercase;
+}
+
+
