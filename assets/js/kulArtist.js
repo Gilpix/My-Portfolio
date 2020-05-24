@@ -104,17 +104,17 @@ var projectDetails=[
 var tekHubResource="<br><br><strong>Check</strong> : <a class='modal-res-links' target='_blank' href='assets/res/LendSystemIteration3.pdf' download>SRS-Document</a>  |  <a class='modal-res-links' target='_blank' href='assets/res/TekhubFinalPresentation.pdf' download>Presentation</a>";
 
 
-//Get value for selected project from ProjectDetails objec
+//Get value for selected project from ProjectDetails object
 function showModal(no){
 	$(".card-button").click(function(){
 		var id=projectDetails[no].id;
 		var name =projectDetails[no].name;
-	var shortDesc =projectDetails[no].heading;
-	var description =projectDetails[no].description;
-	var demo=projectDetails[no].demo;
-	var code=projectDetails[no].code;
-	var image =projectDetails[no].image;
-	modal(id,name,shortDesc, description,demo,code,image);
+		var shortDesc =projectDetails[no].heading;
+		var description =projectDetails[no].description;
+		var demo=projectDetails[no].demo;
+		var code=projectDetails[no].code;
+		var image =projectDetails[no].image;
+		modal(id,name,shortDesc, description,demo,code,image);
 	})
 }
 
