@@ -1,12 +1,12 @@
-//Object of Projects details
+//Object of Projects details for modal
 var projectDetails=[
 {
 	id:"0",
 	name:"My Portfolio",
 	heading:"Kuldeep Singh Software Developer Portfolio Website",
 	description:"KulArtist is an software developer portfolio static website for me(Kuldeep Singh). Designed and written in html, css and javascript. Used two famous librearies <strong>Bootstrap  4.0</strong> and <strong>jQuery</strong> for more effects and designing.",
-	demo:"https://gilpix.github.io/TekHub-Lending-Web-Application/",
-	code:"https://github.com/Gilpix/TekHub-Lending-Web-Application",
+	demo:"https://gilpix.github.io/My-Portfolio/",
+	code:"https://github.com/Gilpix/My-Portfolio",
 	image:"myportfolio.png"
  },
  {
@@ -142,6 +142,118 @@ function modal(id,name,shortDesc, description,demo,code,image){
 	}
 	$(".myModal").modal('show');
 }
+
+
+//Object of Projects Card details
+var projectInfo=[
+
+	{
+		id:"0",
+		title:"My Portfolio",
+		languages:"html/css/jQuery",
+		category:"web",
+		icon:"<i class='far fa-2x fa-address-card'></i><br>",
+		cardImage:"card-img-web"
+	},
+	{
+		id:"1",
+		title:"TekHub",
+		languages:"html/css/javascript",
+		category:"web",
+		icon:"<i class='fas fa-2x fa-shopping-basket'></i><br>",
+		cardImage:"card-img-web"
+	},
+	{
+		id:"2",
+		title:"TekHub",
+		languages:"java/android/mysql",
+		category:"mobile",
+		icon:"<i class='fas fa-2x fa-utensils'></i><br>",
+		cardImage:"card-img-mobile"
+	},
+	{
+		id:"3",
+		title:"Food Buddy",
+		languages:"android/xml/mysql",
+		category:"mobile",
+		icon:"<i class='fas fa-2x fa-shopping-basket'></i><br>",
+		cardImage:"card-img-mobile"
+	},
+	
+	{
+		id:"4",
+		title:"Car Market",
+		languages:"html/css",
+		category:"web",
+		icon:"<i class='fas fa-2x fa-car-side'></i><br>",
+		cardImage:"card-img-web"
+	},
+	{
+		id:"5",
+		title:"Traffic Road Sign",
+		languages:"java/android/xml",
+		category:"mobile",
+		icon:"<i class='fas fa-2x fa-traffic-light'></i><br>",
+		cardImage:"card-img-mobile"
+	},
+	{
+		id:"6",
+		title:"Color Guess",
+		languages:"html/css/javascript",
+		category:"web",
+		icon:"<i class='fas fa-2x fa-gamepad'></i><br>",
+		cardImage:"card-img-web"
+	},
+	{
+		id:"7",
+		title:"ToDo List",
+		languages:"jQuery/css/html",
+		category:"web",
+		icon:"<i class='fas fa-2x fa-list-ul'></i><br>",
+		cardImage:"card-img-web"
+	},
+	{
+		id:"8",
+		title:"Travel with us",
+		languages:"justinmind/design/prototype",
+		category:"other",
+		icon:"<i class='fas fa-2x fa-bus'></i><br>",
+		cardImage:"card-img-others"
+	},
+	{
+		id:"9",
+		title:"Share Expenses",
+		languages:"justinmind/ui design",
+		category:"other",
+		icon:"<i class='fas fa-2x fa-hand-holding-usd'></i><br>",
+		cardImage:"card-img-others"
+	},
+	{
+		id:"10",
+		title:"Pro Quiz",
+		languages:"java/android/play-store",
+		category:"mobile",
+		icon:"<i class='far fa-2x fa-question-circle'></i><br>",
+		cardImage:"card-img-mobile"
+	}
+];
+
+//create card for each project dynamically
+	$.each(projectInfo,function(i){
+	 var temp = "<div class='"+projectInfo[i].category+" all col-sm-12 col-md-6 col-lg-4 px-2 py-2'> <div class='card "+projectInfo[i].cardImage+"'>"
+      +"<p class='text-center project-title'>"+projectInfo[i].icon+projectInfo[i].title+"</p>"
+      +"<div id='card3' class='card-img-overlay pt-5'> <div class='text text-center text-content-card'>"
+    +"<p class='card-titlee'>"+projectInfo[i].title+"</p>"
+    +"<p class='card-texte mb-5'>"+projectInfo[i].languages+"</p>"
+     +" <a href='#/' class='card-button' onclick='showModal("+i+")' >Learn More</a>" +"</div>"+"</div>"+"</div>" 
+	   
+	    $("#myProject").append(temp);
+
+	    $(".card-button").on("click", function () 
+	    {
+			showModal(i);
+		});
+	});
 
 
 //Navbar navigation control
