@@ -5,6 +5,7 @@ html,body{
 	font-family: "raleway-bold";
 	background-color: #fff !important;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 	
 }
 
@@ -14,7 +15,7 @@ html,body{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
