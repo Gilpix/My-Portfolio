@@ -681,7 +681,11 @@ background-color: #F4B400;
 	min-height: 300px;
 }
 .project-button{
-	width: 90px;	
+	width: 70px;	
+	height: 35px;
+	margin: 5px;
+	font-size: .91rem;
+	padding-top: 5px;
 }
 }
 
