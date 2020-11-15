@@ -195,7 +195,7 @@ background-color: #F4B400;
 }
 
 .show{
-	display: block;
+	/* display: block; */
 	vertical-align: middle;
 }
 
@@ -500,8 +500,10 @@ background-color: #F4B400;
 
 
 .modal-image{
-	width: 100%;
+	
 	max-height: 400px;
+	width: 100%;
+	height: auto;
 }
 
 .modal-heading{
@@ -532,9 +534,9 @@ background-color: #F4B400;
 	margin-left: 0px;
 	width: 100%;
 }
-.modal-footer-links{
+/* .modal-footer-links{
 
-}
+} */
 
 .modal-footer-links{
 	font-size: 10pt;
