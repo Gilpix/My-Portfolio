@@ -1,3 +1,9 @@
+:root {
+  /* --skillsMainColor: #7510f7; */
+  --skillsMainColor: rgba(0, 94, 44, 1);
+  --webProject: rgba(28, 49, 243, 0.81);
+}
+
 html,
 body {
   /* height: 100%; */
@@ -397,7 +403,7 @@ body {
 #card-back-block {
   width: 100%;
   height: 400px;
-  background: #7510f7 !important;
+  background: var(--skillsMainColor) !important;
 }
 
 .card-deck {
@@ -411,7 +417,7 @@ body {
 #web-skill-card,
 #backend-skill-card {
   padding: auto 125px !important;
-  box-shadow: 0px 0px 2px #7510f7;
+  box-shadow: 0px 0px 2px var(--skillsMainColor);
   border-radius: 0px;
 }
 
@@ -444,7 +450,7 @@ body {
   #backend-skill-card {
     padding: auto 125px !important;
     border-radius: 25px !important;
-    box-shadow: 0px 0px 2px #7510f7;
+    box-shadow: 0px 0px 2px var(--skillsMainColor);
     margin: 20px auto !important;
     margin-bottom: 10px;
     border-radius: 0px;
@@ -462,13 +468,13 @@ body {
 .card-img-top {
   text-align: center;
   margin: 70px auto 20px auto;
-  color: #7510f7;
+  color: var(--skillsMainColor);
 }
 
 .card-skills-text-heading {
   font-size: 16pt;
   font-weight: 510;
-  color: #0d0d30;
+  color: var(--skillsMainColor);
   margin-bottom: 30px !important;
 }
 
@@ -481,7 +487,7 @@ body {
 .card-skills-inner-headings {
   font-size: 12pt;
   font-weight: 450;
-  color: #7510f7;
+  color: var(--skillsMainColor);
   letter-spacing: 1px;
   margin: 50px auto 20px auto !important;
 }
@@ -654,10 +660,7 @@ body {
 
 .card-img-web {
   background-size: cover;
-  background-image: linear-gradient(
-      rgba(0, 0, 205, 0.85),
-      rgba(0, 0, 205, 0.85)
-    ),
+  background-image: linear-gradient(var(--webProject), var(--webProject)),
     url("https://www.sterlingcheck.com/wp-content/uploads/2018/09/blog-listing.jpg");
   height: 100% !important;
   width: 100% !important;
