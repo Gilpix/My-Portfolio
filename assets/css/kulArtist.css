@@ -246,6 +246,7 @@ body {
   font-size: 11pt;
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 0.51px;
 }
 
 #navbar a:hover {
@@ -262,6 +263,14 @@ body {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar a {
+    padding: 15px 11px;
+    font-size: 10pt;
+    font-weight: 300;
+  }
 }
 
 /*##########################*/
