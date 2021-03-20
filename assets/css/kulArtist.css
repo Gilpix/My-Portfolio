@@ -574,8 +574,9 @@ body {
 }
 
 .modal-footer {
-  border: none !important;
+  border: 1px solid transparent !important;
   border-radius: 15px;
+  border-top: 1px solid transparent !important;
 }
 
 .modal-footer-links {
