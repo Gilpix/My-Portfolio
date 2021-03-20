@@ -531,23 +531,30 @@ body {
 }
 
 .modal-heading {
-  margin-top: 10pt !important;
-  font-size: 1.8rem;
+  margin-top: 7pt !important;
+  font-size: 1.4rem;
   color: #4f4f4f;
-  font-weight: 610;
+  font-weight: 550;
   font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
+  letter-spacing: 0.71px;
 }
 
 .modal-short-text {
-  font-size: 1rem;
-  color: #c0c0c0;
+  text-align: justify;
+  word-break: keep-all;
+  font-size: 0.86rem;
+  color: #918f8f;
   font-family: "Merriweather Sans", sans-serif;
-  font-weight: 650;
+  font-weight: 500;
+
+  letter-spacing: 0.41px;
 }
 
 .modal-desc-text {
-  font-size: 0.81rem;
+  text-align: justify;
+  word-break: keep-all;
+  font-size: 0.75rem;
   color: #444;
   font-weight: 100;
   font-family: "Merriweather Sans", sans-serif;
@@ -562,25 +569,36 @@ body {
 
 } */
 
-.modal-footer-links {
-  font-size: 10pt;
-  background: #db4437;
-  color: white;
+.modal-res-links {
+  color: #db4437 !important;
+}
 
-  text-transform: uppercase;
+.modal-footer {
+  border: none !important;
+  border-radius: 15px;
+}
+
+.modal-footer-links {
+  font-size: 0.85rem;
+  background: #fff;
+  color: #db4437;
+  text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
-  font-weight: 600;
-  padding: 5px 10px 5px 10px;
-
-  border: 1px solid #db4437;
+  font-weight: 450;
+  padding: 3px 15px;
+  /* border-radius: 5px; */
+  border: 2px solid #db4437;
+  border-radius: 5px;
 }
 
 .modal-footer-links:hover {
-  color: #db4437;
+  /* color: #db4437; */
   background: transparent;
   text-decoration: none;
   box-shadow: 0px 0px 1px black;
+  background: #db4437;
+  color: white;
 }
 .about-project {
   border-top: 3px solid #db4437;
@@ -599,11 +617,11 @@ body {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .modal-heading {
-    margin-top: 10pt !important;
-    font-size: 1.4rem;
+    /* margin-top: 10pt !important; */
+    font-size: 1.2rem;
   }
   .modal-short-text {
-    font-size: 0.91rem;
+    font-size: 0.81rem;
   }
 }
 
