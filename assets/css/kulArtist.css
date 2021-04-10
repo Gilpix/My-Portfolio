@@ -9,13 +9,12 @@
 
 html,
 body {
-  /* height: 100%; */
   width: 100%;
   background: #fff;
   font-family: "raleway-bold";
   background-color: #fff !important;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /*##########################*/
@@ -535,11 +534,14 @@ body {
 /*##########################*/
 /*Modal CSS*/
 /*##########################*/
-
+.modal-open {
+  overflow: hidden !important;
+}
 .modal-image {
   max-height: 400px;
   width: 100%;
   height: auto;
+  border-radius: 14px 14px 0px 0px;
 }
 
 .modal-heading {
