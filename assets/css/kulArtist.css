@@ -82,7 +82,7 @@ body {
   position: absolute;
   right: -12vh;
   bottom: -8vh;
-  z-index: 12223;
+  z-index: 1;
   text-shadow: 0px 0px 62px white;
   border: 18px solid #f4b400;
   border-radius: 50%;
@@ -371,7 +371,7 @@ body {
   width: 35vh;
   display: flex;
   align-items: center;
-  z-index: 2223;
+  z-index: 1;
   border: 9px solid #f4b400;
   border-radius: 190px;
 }
