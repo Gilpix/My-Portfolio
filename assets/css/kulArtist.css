@@ -384,15 +384,13 @@ body {
   vertical-align: center;
 }
 
-.about-me-content a {
+.in-text-link {
   color: #000000;
   font-weight: 530;
 }
 
-.about-me-content a:hover {
+.in-text-link:hover {
   color: #f4b400;
-  /* font-weight: 600; */
-  /* text-decoration: none; */
 }
 
 /*##################*/
