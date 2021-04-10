@@ -384,6 +384,17 @@ body {
   vertical-align: center;
 }
 
+.about-me-content a {
+  color: #000000;
+  font-weight: 530;
+}
+
+.about-me-content a:hover {
+  color: #f4b400;
+  /* font-weight: 600; */
+  /* text-decoration: none; */
+}
+
 /*##################*/
 /*SKILLS CARD DECK*/
 /*##################*/
