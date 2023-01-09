@@ -9,6 +9,7 @@
 
   --primaryColor: #f4b400;
   --secondaryColor: #101820FF;
+  --navbarBtnBackground: #F5F5DC;
   --skillsTextColor:var(--skillsMainColor);
 }
 
@@ -16,19 +17,10 @@ html,
 body {
   width: 100%;
   background: #fff;
-  font-family: "raleway-bold";
-  background-color: var(--primaryColor);
+  background-color: #fff;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  overflow-x: hidden;
 }
 
 /*##########################*/
@@ -155,8 +147,8 @@ h6 {
   background: var(--secondaryColor);
   color: var(--primaryColor);
   box-shadow: 0px 0px 2px rgba(6, 190, 225, 0.41);
-  border: 2px solid var(--primaryColor);
-  box-shadow: 0px 0px 7px #fff;
+  border: 2px solid var(--secondaryColor);
+  box-shadow: 0px 0px 10px #fff;
 }
 #start:focus,
 #let:focus {
@@ -308,13 +300,15 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: var(--secondaryColor);
+  /* color: #45505b; */
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: var(--navbarBtnBackground);
+  /* background: #f2f3f5; */
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -351,7 +345,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #0563bb;
+  background: #000000;
 }
 
 .nav-menu a:hover span,
