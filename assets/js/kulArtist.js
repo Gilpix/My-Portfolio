@@ -549,3 +549,10 @@ $(".card-img-overlay").each(function () {
 			});
 		});
 });
+
+
+$(".mobile-nav-toggle").click(function (e) {
+	$("body").toggleClass("mobile-nav-active");
+	$(this).toggleClass("bx-menu");
+	$(this).toggleClass("bx-x");
+});
