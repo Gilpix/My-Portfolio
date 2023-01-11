@@ -747,7 +747,7 @@ body {
 
 .modal-heading {
   margin-top: 7pt !important;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #4f4f4f;
   font-weight: 550;
   font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial,
@@ -758,7 +758,7 @@ body {
 .modal-short-text {
   text-align: justify;
   word-break: keep-all;
-  font-size: 0.86rem;
+  font-size: 1rem;
   color: #918f8f;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 500;
@@ -769,7 +769,7 @@ body {
 .modal-desc-text {
   text-align: justify;
   word-break: keep-all;
-  font-size: 0.75rem;
+  font-size: 0.90rem;
   color: #444;
   font-weight: 100;
   font-family: "Merriweather Sans", sans-serif;
@@ -780,9 +780,6 @@ body {
   margin-left: 0px;
   width: 100%;
 }
-/* .modal-footer-links{
-
-} */
 
 .modal-res-links {
   color: var(--modalSectionColor) !important;
@@ -795,21 +792,18 @@ body {
 }
 
 .modal-footer-links {
-  font-size: 0.85rem;
+  font-size: 0.80rem;
   background: #fff;
   color: var(--modalSectionColor);
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
   letter-spacing: 1px;
   font-weight: 450;
   padding: 3px 15px;
-  /* border-radius: 5px; */
-  border: 2px solid var(--modalSectionColor);
-  border-radius: 5px;
+  border: 1px solid var(--mainColor);
+  transition: .3s;
 }
 
 .modal-footer-links:hover {
-  /* color: #db4437; */
   background: transparent;
   text-decoration: none;
   box-shadow: 0px 0px 1px black;
@@ -821,13 +815,12 @@ body {
 }
 
 .modal-cross-btn {
-  color: var(--modalSectionColor);
+  color: var(--mainColor);
 }
 
 .modal-cross-btn:hover {
-  color: var(--modalSectionColor);
+  color: #4f4f4f;
   background: transparent;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -890,6 +883,7 @@ body {
 .card-background {
   background-color: #f5f5f5;
   position: relative;
+  transition: 0.4s !important;
 }
 
 .card-img-web {
@@ -907,7 +901,7 @@ body {
       rgba(204, 0, 102, 0.85),
       rgba(204, 0, 102, 0.85)
     ),
-    url("https://www.sterlingcheck.com/wp-content/uploads/2018/09/blog-listing.jpg");
+    url("https://images.pexels.com/photos/6416/apple-desk-office-technology.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   height: 100% !important;
   width: 100% !important;
   min-height: 250px;
@@ -919,7 +913,7 @@ body {
       rgba(205, 0, 205, 0.85),
       rgba(205, 0, 205, 0.85)
     ),
-    url("https://www.sterlingcheck.com/wp-content/uploads/2018/09/blog-listing.jpg");
+    url("https://images.pexels.com/photos/593322/pexels-photo-593322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   height: 100% !important;
   width: 100% !important;
   min-height: 250px;
@@ -968,6 +962,7 @@ body {
   text-transform: uppercase;
   margin: auto;
   font-family: "Raleway-bold";
+  background-color: transparent !important;
 }
 .card-texte {
   font-size: 12pt;
@@ -1084,7 +1079,7 @@ body {
   color: #0062cc;
 }
 .contact-form .btnContact {
-  width: 50%;
+  width: 60%;
   border: 1px solid #06bee1;
   border-radius: 1rem;
   padding: 1.5%;
@@ -1096,6 +1091,7 @@ body {
   letter-spacing: 1px;
   color: #fff;
   cursor: pointer;
+  transition: .3s;
 }
 .contact-form .btnContact:hover {
   background-color: #06bee1;
