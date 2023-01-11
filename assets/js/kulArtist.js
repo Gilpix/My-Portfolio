@@ -468,26 +468,28 @@ $(".all-projects-container a div").click(function () {
 $(document).ready(function () {
 
 	//Move Profile Image horizontally	
+	// $("#profile-image").click(function () {
+	// 	$("#profile-image").effect("shake", { times: 2, distance: 180 }, 8000);
+	// });
+
+	//add shock wave effect
 	$("#profile-image").click(function () {
-		$("#profile-image").effect("shake", { times: 2, distance: 180 }, 8000);
+		$("#profile-image").toggleClass("is-active");
 	});
 
 	//Show and hide content of Home Page using effects
-	$("#start").click(function () {
-		// $("#cont").slideDown(1000);
-		$("#cont").toggle("fade", { times: 3 }, "slow", function () {
-			$("#cont2").delay(200).toggle("fade", { times: 3 }, "slow");
-			$("#cont3").delay(1000).toggle("drop", "slow");
+	// $("#start").click(function () {
+	// 	$("#cont").toggle("fade", { times: 3 }, "slow", function () {
+	// 		$("#cont2").delay(200).toggle("fade", { times: 3 }, "slow");
+	// 		$("#cont3").delay(1000).toggle("drop", "slow");
 
-		});
-	});
+	// 	});
+	// });
 
 	//Move Profile Image Vertically
-	$('#let').click(function () {
-		// $("#profile-image").stop(true, true);
-		// $( "#profile-image" ).animate({ bottom: "-=10px" }, 2000 );
-		$("#profile-image").effect("bounce", { times: 19, distance: 90 }, 8000);
-	});
+	// $('#let').click(function () {
+	// 	$("#profile-image").effect("bounce", { times: 19, distance: 90 }, 8000);
+	// });
 });
 
 
