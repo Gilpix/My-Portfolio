@@ -486,7 +486,7 @@ $(document).ready(function () {
 	$('#let').click(function () {
 		// $("#profile-image").stop(true, true);
 		// $( "#profile-image" ).animate({ bottom: "-=10px" }, 2000 );
-		$("#profile-image").effect("bounce", { times: 4, distance: 90 }, 8000);
+		$("#profile-image").effect("bounce", { times: 19, distance: 90 }, 8000);
 	});
 });
 
@@ -556,3 +556,21 @@ $(".mobile-nav-toggle").click(function (e) {
 	$(this).toggleClass("bx-menu");
 	$(this).toggleClass("bx-x");
 });
+
+
+  /**
+   * Home text type effect
+   */
+  var typed = document.querySelectorAll(".typed")[0];
+  console.log(typed)
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }

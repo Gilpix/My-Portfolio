@@ -52,38 +52,35 @@
   </header><!-- End Header -->
 
   <!--- - - - - - - - - -- - - - - - - - - - - Home Section - - - - - - - - - -- - - - - - - - - - - -->
-  <section id="home">
-    <div style="background: #06BEE1">
+  <section id="home" class="diagonal-split-background">
       <div class="row">
-        <div id="col1" class="column">
+
+        <div class="col-12 home_half_column">
+          <img class="cente mx-auto" id="profile-image" src="assets/res/profile.png">
           <div class="content">
-            <div id="cont" class="col-content center">
-              <h2 id="hello">Hello, I'm <span class="name">Kuldeep Singh</span> <br></h2>
-            </div>
-          </div>
-          <img id="profile-image" src="assets/res/profile.png">
-        </div>
-        <div id="col2" class=" column">
-          <div class="content">
-            <div id="cont2" class="col-content center">
-              <h2 id="developer" class="text-center"> <span class="name">Full-Stack Developer</span> <br></h2>
+            <div class="center">         
+              <div class="home-text"  data-aos="zoom-in" data-aos-delay="100">
+                <h1>Kuldeep Singh</h1>
+                <h2>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></h2>
+              </div>
             </div>
           </div>
         </div>
-        <div id="col3" class="columnn">
-          <div clas="content">
-            <div id="cont3" class="col-content center">
-              <h2 id="about-me" class="text-center">
-                I enjoy turning complex problems into simple, beautiful and intuitive designs.</h2>
+
+        <div class="col-12 home_full_columnn">
+          <!-- <div class="center text-center height-100 "> -->
+            <!-- <button id="let" class="text-center btn btn-info btn-md">START</button>
+            <button id="start" class="text-center btn btn-info btn-md">SHOW</button> -->
+            <div class="social-links text-center">
+              <a href="https://ca.linkedin.com/in/kuldeep1993" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.instagram.com/kulartist/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://play.google.com/store/apps/developer?id=Gilpix" class="play-store"><i class="bx bxl-play-store"></i></a>
+              <a href="https://github.com/Gilpix" class="github"><i class="bx bxl-github"></i></a>
+              <a href="https://www.instagram.com/gilpixphotography/" class="stack-overflow"><i class='bx bxl-instagram-alt'></i></a>
             </div>
-          </div>
-          <div class="center text-center">
-            <button id="let" class="text-center btn btn-info btn-md">START</button>
-            <button id="start" class="text-center btn btn-info btn-md">SHOW</button>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -384,6 +381,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
     integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <!-- Template Main JS File -->
   <script type="text/javascript" src="assets/js/kulArtist.js"></script>
