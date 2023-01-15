@@ -18,8 +18,10 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" type="text/css" href="assets/css/kulArtist.css">
   <link rel="stylesheet" type="text/css" href="assets/css/effects.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animations.css">
 
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,7 +40,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
-    <nav id="navbar" class="navbar nav-menu d-flex flex-row">
+    <nav id="navbar" class="navbar nav-menu d-flex flex-row" >
       <ul>
         <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
@@ -92,32 +94,32 @@
 
   <!--- - - - - - - - - -- - - - - - - - - - - About Me Section - - - - - - - - - -- - - - - - - - - - - -->
   <section id="about">
-    <div class="container  pb-5">
+    <div class="container  pb-5" data-aos="fade-up" data-aos-delay="100">
       <h2 class="section-heading">About</h2>
       <hr class="section-heading-hr">
       <div class="row">
-        <div class="col-sm-6 col-lg-3 about-column">
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
           <span class="material-icons" style="font-size: 54px;"> web</span>
           <h3 class="about-icon-heading">User-Focused</h3>
           <p class="about-content">I value simple content structure, clean design patterns, thoughtful and easy
             interactions for end user.</p>
         </div>
 
-        <div class="col-sm-6 col-lg-3 about-column">
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
           <span class="material-icons" style="font-size: 54px;"> speed</span>
           <h3 class="about-icon-heading">Adaptability</h3>
           <p class="about-content">With rapid change in the IT world, I'm always on the lookout for new tools and ways
             of doing things.</p>
         </div>
 
-        <div class="col-sm-6 col-lg-3 about-column">
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
           <span class="material-icons" style="font-size: 54px;"> speed</span>
           <h3 class="about-icon-heading">Quick-Learner</h3>
           <p class="about-content">With amazing quick-learning skill, I learn new technologies fast and mostly my own.
           </p>
         </div>
 
-        <div class="col-sm-6 col-lg-3 about-column">
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
           <span class="material-icons" style="font-size: 54px;"> group_work</span>
           <h3 class="about-icon-heading">Team-Player</h3>
           <p class="about-content">When it comes to work in a team, I'm a good team player, never hesitate to help
@@ -125,11 +127,11 @@
         </div>
       </div>
 
-      <div class="row mt-3 pt-4">
+      <div class="row mt-3 pt-4"  data-aos="fade-up">
         <div class="about-me-image col-md-6 col-sm-12 py-4">
           <img id="about-profile-image" src="assets/res/big_profile_yellow_style.png">
         </div>
-        <div class="col-md-6 col-sm-12 py-3">
+        <div class="col-md-6 col-sm-12 py-3" data-aos="fade-up">
           <h3 class="about-icon-heading ">Who Am I ?</h3>
           <p class="about-me-content">
             My name is Kuldeep Singh. Software Developer from Canada with rock-solid experience in building complex
@@ -148,14 +150,112 @@
     </div>
   </section>
 
+  <!-- ======= experience Section ======= -->
+  <section id="experience" class="experience">
+      <div class="container  pb-5" data-aos="fade-up">
+        <h2 class="section-heading">Experience</h2>
+        <hr class="section-heading-hr">
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">Nojumi Solution inc</h3>
+          <div class="experience-item pb-0">
+            <h4>Software Developer</h4>
+            <h5>May 2021 - Dec 2022</h5>
+            <p><em>Toronto, Ontario, Canada</em></p>
+            <p>It is a security company where I worked on a web application for managing the staff schedule and profile.</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <p><b>Technologies : </b></p>
+          </div>
+       
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">piknix</h3>
+          <div class="experience-item">
+            <h4>Software Developer</h4>
+            <h5>Jun 2020 - May 2021</h5>
+            <p><em>Montreal, Quebec, Canada</em></p>
+            <p>Piknix is an e-commerce marketplace for shopping local groceries online. 
+              It allows local merchants to register and sell their products. I am working as a software developer with a team of 4.</p>
+            <ul>
+              <li>Contributed in all phases of the development lifecycle</li>
+              <li>Designed and developed views/templates on top of javascript, using the ejs templating engine</li>
+              <li>Web page development from design to test and up to production deployment.</li>
+              <li>Worked on design(database schema) and implementation of various REST API’s using ice factory pattern</li>
+              <li>Created and implemented a custom CSS grid system, with CSS media queries for mobile responsiveness.</li>
+              <li>Created HTML email templates and newsletters for e-mail marketing campaigns.</li>
+              <li>Integrated PayPal payment gateway, google API’s, passport authentication and authorization, i18n localization, send grid email API, Twilio SMS API</li>
+              <li>Worked with Express MVC framework for NodeJS to create the routes required for delivering data to the front end.</li>
+              <li>Created docker image for configuration simplifications</li>
+              <li>Server setup using nginx as web server and added SSL certificates</li>
+              <li>Building service components and complex business logic</li>
+              <li>Used MySQL for database and Sequelize ORM</li>
+              <li>Did on site SEO implementations to increase traffic to client websites</li>
+              <li>Analyzed traffic and made necessary changes for a better user experience</li>
+            </ul>
+            <p><b>Technologies : </b>Javascript | NodeJs | ExpressJs | HTML5 | MySql | Bootstrap 4 | Sequelize | Passport | Nginx | Visual Code | Digital Ocean | Docker | GoDaddy</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">Cégep de la Gaspésie et des Îles</h3>
+          <div class="experience-item">
+            <h4>Internship - Project Lead Developer | Project Leader</h4>
+            <h5>Nov 2019 - Mar 2020</h5>
+            <p><em>Montreal, Quebec, Canada</em></p>
+            <p>Lending System Application -
+              This application is designed to be used by the students of CEGEP de la gaspesie to borrow devices from the college. The app will provide list of devices like laptops, 
+              lan cables, etc.. Students can filter out the items list on the basis of type of items, newest added, most borrowed items, ratings by user or can directly search the item in search bar and borrow any item from the list.</p>
+            <ul>
+              <li>Lead and directed the full-stack development of the entire SDLC from inception to completion in a team of 5 SDEs</li>
+              <li>Worked on design(and database schema) and implementation of various REST API’s◦Requirement gathering, user stories creation, no of sprints, and split user stories accordingly</li>
+              <li>Added functionality like show product list, filter products, borrow products, search products, add to wishlist, etc.</li>
+              <li>Added admin dashboard to maintain(add/update/delete) the users and products from the inventory.</li>
+              <li>Throughout maintenance of SRS document</li>
+            </ul>
+            <p><b>Technologies : </b>Android | Maven | Postman | MySql | JavaSE | Firebase | JavaEE | Eclipse | Git | Web calls | AWS RDS mysql db instance.</p>
+          </div>
+        </div>
+        
+
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">JDSA Pvt. Ltd</h3>
+          <div class="experience-item">
+            <h4>Technical Associate</h4>
+            <h5>Feb 2018 - Jul 2018</h5>
+            <p><em>Gurgaon, India</em></p>
+            <p>It is a security company where I worked on a web application for managing the staff schedule and profile.</p>
+            <ul>
+              <li>Designed and developed a web application that reduced employer’s management teamwork by 50%.</li>
+              <li>Implemented authentication and authorization, employers can access their profile, job schedule, and salary status.</li>
+              <li>Researched, identified, and eliminated bugs and issues, ensured products are reliable, scalable, and secure.</li>
+              <li>Developed a new admin panel, which improved internal operating efficiency by over 30%.</li>
+            </ul>
+            <p><b>Technologies : </b>JavaScript | ReactJS | HTML | JSON | NodeJS | Bootstrap | MySql | Express | Agile | Github | npm</p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End experience Section -->
+
 
   <section id="skills">
-    <div id="card-back-block">
+    <div id="card-back-block" data-aos="fade">
       <h2 class="text-center skill-heading">My Skills</h2>
     </div>
 
     <div class=" card-deck mb-5 px-4 ">
-      <div id="mobile-skill-card" class="card  mx-0">
+      <div id="mobile-skill-card" data-aos="fade-right" class="card  mx-0">
         <div class="card-img-top"><i class="fas fa-laptop-code fa-3x "></i></div>
         <div class="card-body text-center">
           <h5 class="text-center card-skills-text-heading card-title">Front-end Developer</h5>
@@ -183,7 +283,7 @@
           <small class="text-muted">Software Develeoper at Piknix</small>
         </div>
       </div>
-      <div id="web-skill-card" class="card   mx-0">
+      <div id="web-skill-card" data-aos="zoom-in" class="card   mx-0">
         <div class="card-img-top"><i class="fas fa-3x fa-database"></i></div>
         <div class="card-body text-center">
           <h5 class="text-center card-skills-text-heading card-title">Back-end Developer</h5>
@@ -215,7 +315,7 @@
           <small class="text-muted text-center">AEC Diploma in Mobile Application Development</small>
         </div>
       </div>
-      <div id="backend-skill-card" class="card  mx-0">
+      <div id="backend-skill-card" data-aos="fade-left" class="card  mx-0">
         <div class="card-img-top"><i class="fas fa-3x fa-palette"></i></div>
         <div class="card-body text-center">
           <h5 class="text-center card-skills-text-heading card-title">Designer + Others</h5>
@@ -377,6 +477,7 @@
 
   <!-- Vendor JS Files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">

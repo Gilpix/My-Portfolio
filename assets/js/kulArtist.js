@@ -412,7 +412,7 @@ var projectInfo = [
 //create card for each project dynamically
 $.each(projectInfo, function (i) {
 	let index = parseInt(projectInfo[i].id);
-	var temp = "<div class='" + projectInfo[index].category + " all col-sm-12 col-md-6 col-lg-4 px-2 py-2'> <div class='card " + projectInfo[index].cardImage + "'>"
+	var temp = "<div class='" + projectInfo[index].category + " all col-sm-12 col-md-6 col-lg-4 px-2 py-2' data-aos='zoom-in' data-aos-delay='150'> <div class='card " + projectInfo[index].cardImage + "'>"
 		+ "<p class='text-center project-title'>" + projectInfo[index].icon + projectInfo[index].title + "</p>"
 		+ "<div id='card3' class='card-img-overlay pt-5'> <div class='text text-center text-content-card'>"
 		+ "<p class='card-titlee'>" + projectInfo[index].title + "</p>"
@@ -576,3 +576,15 @@ $(".mobile-nav-toggle").click(function (e) {
       backDelay: 2000
     });
   }
+
+    /**
+   * Animation on scroll
+   */
+	window.addEventListener('load', () => {
+		AOS.init({
+		  duration: 1000,
+		  easing: 'ease-in-out',
+		  once: true,
+		  mirror: false
+		})
+	  });

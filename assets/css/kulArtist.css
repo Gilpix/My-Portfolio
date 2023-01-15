@@ -507,7 +507,7 @@ body {
   text-align: center;
   color: var(--sectionHeading);
   line-height: 18pt;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 100px 0 15px 0;
   text-transform: uppercase;
 }
@@ -859,7 +859,7 @@ body {
 }
 
 .project-button {
-  width: 150px;
+  width: 130px;
   transition: all 0.01s;
   height: 35px;
   font-weight: 420;
@@ -873,6 +873,10 @@ body {
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transition-delay: 0s;
+}
+
+.project-button:hover {
+  color: var(--mainColor);
 }
 
 .all-projects-container a {
@@ -1175,3 +1179,64 @@ body {
 
 
 
+
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+.experience .experience-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.experience .experience-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--mainColor);
+  position: relative;
+}
+
+.experience .experience-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--mainColor);
+  margin-bottom: 10px;
+}
+
+.experience .experience-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.experience .experience-item ul {
+  padding-left: 20px;
+}
+
+.experience .experience-item ul li {
+  padding-bottom: 10px;
+}
+
+.experience .experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience .experience-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--mainColor);
+}
