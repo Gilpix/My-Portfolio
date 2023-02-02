@@ -412,7 +412,7 @@ var projectInfo = [
 //create card for each project dynamically
 $.each(projectInfo, function (i) {
 	let index = parseInt(projectInfo[i].id);
-	var temp = "<div class='" + projectInfo[index].category + " all col-sm-12 col-md-6 col-lg-4 px-2 py-2'> <div class='card " + projectInfo[index].cardImage + "'>"
+	var temp = "<div class='" + projectInfo[index].category + " all col-sm-12 col-md-6 col-lg-4 px-2 py-2' data-aos='zoom-in' data-aos-delay='150'> <div class='card " + projectInfo[index].cardImage + "'>"
 		+ "<p class='text-center project-title'>" + projectInfo[index].icon + projectInfo[index].title + "</p>"
 		+ "<div id='card3' class='card-img-overlay pt-5'> <div class='text text-center text-content-card'>"
 		+ "<p class='card-titlee'>" + projectInfo[index].title + "</p>"
@@ -468,26 +468,28 @@ $(".all-projects-container a div").click(function () {
 $(document).ready(function () {
 
 	//Move Profile Image horizontally	
+	// $("#profile-image").click(function () {
+	// 	$("#profile-image").effect("shake", { times: 2, distance: 180 }, 8000);
+	// });
+
+	//add shock wave effect
 	$("#profile-image").click(function () {
-		$("#profile-image").effect("shake", { times: 2, distance: 180 }, 8000);
+		$("#profile-image").toggleClass("is-active");
 	});
 
 	//Show and hide content of Home Page using effects
-	$("#start").click(function () {
-		// $("#cont").slideDown(1000);
-		$("#cont").toggle("fade", { times: 3 }, "slow", function () {
-			$("#cont2").delay(200).toggle("fade", { times: 3 }, "slow");
-			$("#cont3").delay(1000).toggle("drop", "slow");
+	// $("#start").click(function () {
+	// 	$("#cont").toggle("fade", { times: 3 }, "slow", function () {
+	// 		$("#cont2").delay(200).toggle("fade", { times: 3 }, "slow");
+	// 		$("#cont3").delay(1000).toggle("drop", "slow");
 
-		});
-	});
+	// 	});
+	// });
 
 	//Move Profile Image Vertically
-	$('#let').click(function () {
-		// $("#profile-image").stop(true, true);
-		// $( "#profile-image" ).animate({ bottom: "-=10px" }, 2000 );
-		$("#profile-image").effect("bounce", { times: 4, distance: 90 }, 8000);
-	});
+	// $('#let').click(function () {
+	// 	$("#profile-image").effect("bounce", { times: 19, distance: 90 }, 8000);
+	// });
 });
 
 
@@ -549,3 +551,40 @@ $(".card-img-overlay").each(function () {
 			});
 		});
 });
+
+
+$(".mobile-nav-toggle").click(function (e) {
+	$("body").toggleClass("mobile-nav-active");
+	$(this).toggleClass("bx-menu");
+	$(this).toggleClass("bx-x");
+});
+
+
+  /**
+   * Home text type effect
+   */
+  var typed = document.querySelectorAll(".typed")[0];
+  console.log(typed)
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+
+    /**
+   * Animation on scroll
+   */
+	window.addEventListener('load', () => {
+		AOS.init({
+		  duration: 1000,
+		  easing: 'ease-in-out',
+		  once: true,
+		  mirror: false
+		})
+	  });
