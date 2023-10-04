@@ -5,20 +5,19 @@
   /* --projectSectionColor: #db4437; */
   --modalSectionColor: #f4b400;
 
-
   --primaryColor: #f4b400;
-  --secondaryColor: #101820FF;
-  --navbarBtnBackground: #F5F5DC;
-  --skillsTextColor:var(--skillsMainColor);
+  --secondaryColor: #101820ff;
+  --navbarBtnBackground: #f5f5dc;
+  --skillsTextColor: var(--skillsMainColor);
   --sectionHeading: #393939;
 
   /* --webProject: rgba(28, 49, 243, 0.81);
   --mobileProject: rgba(204, 0, 102, 0.85);
   --allProject: rgba(205, 0, 205, 0.85); */
 
-  --webProject: rgba(228, 155, 15, .90); 
-  --mobileProject: rgba(147, 197, 114, .90);
-  --allProject: rgba(194, 178, 128, .90);
+  --webProject: rgba(228, 155, 15, 0.9);
+  --mobileProject: rgba(147, 197, 114, 0.9);
+  --allProject: rgba(194, 178, 128, 0.9);
   --projectSectionColor: #f4b400;
 }
 
@@ -62,12 +61,15 @@ body {
                                   HOME Section Starts here
 /*########################################################################################################*/
 
-.diagonal-split-background{
-  background-color: #013A6B;
+.diagonal-split-background {
+  background-color: #013a6b;
   /* background-image: -webkit-linear-gradient(140deg, var(--secondaryColor) 45%, var(--mainColor) 45%); */
-  background-image: -webkit-linear-gradient(230deg, var(--secondaryColor) 50%, var(--mainColor) 50%);
+  background-image: -webkit-linear-gradient(
+    230deg,
+    var(--secondaryColor) 50%,
+    var(--mainColor) 50%
+  );
   /* background-image: -webkit-linear-gradient(30deg, var(--mainColor) 50%, var(--secondaryColor) 50%); */
-
 }
 
 .home_half_column {
@@ -78,20 +80,20 @@ body {
   color: white;
 }
 
-.home-text{
+.home-text {
   width: 50%;
-  float: right; 
+  float: right;
   text-align: center;
-  }
-
-.home-text h1 {
-  font-size : 3rem;
-  font-weight: 600;
-  color:#fff;
 }
 
-.home-text  h2 {
-  font-size : 2rem;
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.home-text h2 {
+  font-size: 2rem;
   font-weight: 300;
   color: var(--mainColor);
 }
@@ -136,15 +138,15 @@ body {
   overflow: hidden;
   transition-duration: 1.8s;
   transition-property: transform;
-  border-image-slice: fill ;
-  background-color: var(--primaryColor) ;
+  border-image-slice: fill;
+  background-color: var(--primaryColor);
 }
 
 #profile-image:hover {
   transform: rotate(720deg);
 }
 
- .social-links {
+.social-links {
   position: absolute;
   bottom: 2rem;
   left: 5rem;
@@ -153,7 +155,7 @@ body {
   padding-left: 20px;
 }
 
- .social-links a {
+.social-links a {
   font-size: 2.2rem;
   display: inline-block;
   color: #ffffff;
@@ -162,10 +164,9 @@ body {
   transition: 0.3s;
 }
 
- .social-links a:hover {
+.social-links a:hover {
   color: var(--secondaryColor);
 }
-
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -180,7 +181,6 @@ body {
   }
   .home_half_column {
     width: 100%;
-
   }
 
   .home-text {
@@ -214,13 +214,6 @@ body {
     font-size: 2rem;
   }
 }
-
-
-
-
-
-
-
 
 /* #let {
   bottom: -15vh;
@@ -261,7 +254,6 @@ body {
   box-shadow: none;
 } */
 
-
 /* #hello,
 #developer {
   letter-spacing: 1px;
@@ -294,8 +286,7 @@ body {
   vertical-align: middle;
 } */
 
-
-  /* For mobile phones: */
+/* For mobile phones: */
 /* @media only screen and (max-width: 768px) {
 
   #developer {
@@ -328,7 +319,6 @@ body {
 /*########################################################################################################
                               NAVBAR Section Starts here
 /*########################################################################################################*/
-
 
 /*--------------------------------------------------------------
 # Header
@@ -377,7 +367,7 @@ body {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -387,7 +377,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--secondaryColor);
-  padding: .8rem 1.1rem;
+  padding: 0.8rem 1.1rem;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 1rem;
@@ -412,7 +402,6 @@ body {
 }
 
 @media (min-width: 992px) {
-
   .nav-menu a,
   .nav-menu a:focus {
     width: 56px;
@@ -428,7 +417,7 @@ body {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   color: #fff;
   background: #000000;
 }
@@ -436,18 +425,18 @@ body {
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   color: #fff;
 }
 
 .nav-menu a:hover,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   width: 100%;
   color: #fff;
 }
 
 .nav-menu a:hover span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   display: block;
 }
 
@@ -486,9 +475,6 @@ body {
   color: var(--secondaryColor);
   background-color: var(--mainColor);
 }
-
-
-
 
 /*##########################*/
 /*NAVBAR Section Ends Here*/
@@ -777,7 +763,7 @@ body {
 .modal-desc-text {
   text-align: justify;
   word-break: keep-all;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   color: #444;
   font-weight: 100;
   font-family: "Merriweather Sans", sans-serif;
@@ -800,15 +786,15 @@ body {
 }
 
 .modal-footer-links {
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   background: #fff;
   color: var(--modalSectionColor);
-  text-transform:uppercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 450;
   padding: 3px 15px;
   border: 1px solid var(--mainColor);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .modal-footer-links:hover {
@@ -910,13 +896,10 @@ body {
 
 .card-img-mobile {
   background-size: cover;
-  background-image: linear-gradient(
-      var(--mobileProject),
-      var(--mobileProject)
-    ),
+  background-image: linear-gradient(var(--mobileProject), var(--mobileProject)),
     url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80");
 
-    /* url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
+  /* url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
   height: 100% !important;
   width: 100% !important;
   min-height: 250px;
@@ -924,10 +907,7 @@ body {
 
 .card-img-others {
   background-size: cover;
-  background-image: linear-gradient(
-      var(--allProject),
-      var(--allProject)
-    ),
+  background-image: linear-gradient(var(--allProject), var(--allProject)),
     url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80");
   height: 100% !important;
   width: 100% !important;
@@ -1106,7 +1086,7 @@ body {
   letter-spacing: 1px;
   color: #fff;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .contact-form .btnContact:hover {
   background-color: #06bee1;
@@ -1176,9 +1156,6 @@ body {
 .copyright-text {
   text-transform: uppercase;
 }
-
-
-
 
 /*--------------------------------------------------------------
 # Experience
