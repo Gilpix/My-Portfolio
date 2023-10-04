@@ -590,6 +590,21 @@ body {
   color: var(--primaryColor);
 }
 
+.first-letter {
+  font-size: 35px;
+  line-height: 70px;
+  font-weight: 400;
+  color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 768px) {
+  .first-letter {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 350;
+  }
+}
+
 /*##################*/
 /*SKILLS CARD DECK*/
 /*##################*/
