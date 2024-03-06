@@ -559,32 +559,43 @@ $(".mobile-nav-toggle").click(function (e) {
 	$(this).toggleClass("bx-x");
 });
 
+// add read more/less functionality
+$(".more-less").click(function () {
+	let $more = $(this).siblings('ul.more').toggleClass("main");
 
-  /**
-   * Home text type effect
-   */
-  var typed = document.querySelectorAll(".typed")[0];
-  console.log(typed)
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
+	if ($more.hasClass('main')) {
+		$(this).text('Read Less');
+	} else {
+		$(this).text('Read More');
+	}
+});
 
-    /**
-   * Animation on scroll
-   */
-	window.addEventListener('load', () => {
-		AOS.init({
-		  duration: 1000,
-		  easing: 'ease-in-out',
-		  once: true,
-		  mirror: false
-		})
-	  });
+
+/**
+ * Home text type effect
+ */
+var typed = document.querySelectorAll(".typed")[0];
+console.log(typed)
+if (typed) {
+	let typed_strings = typed.getAttribute('data-typed-items')
+	typed_strings = typed_strings.split(',')
+	new Typed('.typed', {
+		strings: typed_strings,
+		loop: true,
+		typeSpeed: 100,
+		backSpeed: 50,
+		backDelay: 2000
+	});
+}
+
+/**
+* Animation on scroll
+*/
+window.addEventListener('load', () => {
+	AOS.init({
+		duration: 1000,
+		easing: 'ease-in-out',
+		once: true,
+		mirror: false
+	})
+});
